@@ -1,0 +1,194 @@
+/* 
+Colors: 
+Green - #44FFA1
+Purple 900 - #24053E
+Purple 500 - #584D62
+Purple 100 - #FCF8FF 
+White - #FFF
+ 
+Font
+Fraunces 80px Semibold 100% LH 0 LS
+Fraunces 56px Semibold 120% LH 0 LS
+Fraunces 32px Semibold 120% LH 0 LS
+Manrope 18px Regular 180% LH 0 LS
+Manrope 18px Bold 150% 0 LS
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+
+}
+
+.hero-background {
+  background-color: #24053e;
+  width: 100%;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-background::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: #24053e;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translateY(50%);
+}
+
+.pattern {
+  position: absolute;
+}
+
+.pattern:nth-of-type(1) {
+  top: 20%;
+  left: -7%;
+}
+
+.pattern:nth-of-type(2) {
+  right: 0;
+  bottom: 40%;
+}
+
+.container {
+  max-width: 1440;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 156px 56px 156px;
+  position: relative;
+}
+
+.cta {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+}
+
+.cta::after {
+  content: "";
+  width: 85%;
+  height: 2px;
+  position: absolute;
+  background-color: #44ffa1;
+  bottom: 0;
+  left: 8%;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Fraunces";
+  margin-bottom: 40px;
+}
+
+.learn-more {
+  border: none;
+  background-color: transparent;
+  color: #44ffa1;
+  border: 2px solid #44ffa1;
+  padding: 12px 32px;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+.phone {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  height: 400px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+}
+
+ .benefits-background {
+  margin-top: 50px;
+  padding-top: 200px
+  width: 100%;
+  height: 600px;
+  background-color: #FCF8FF;
+  margin-top: 420px;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  padding-top: 120px;
+  transform: translateY(-0200px);
+  z-index: -1;
+  color: #24053E;
+  display: flex;
+
+} 
+
+ .benefits-background::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background-color: #FCF8FF;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: -1;
+} 
+
+ .benefits-background::before {
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: ;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translateY(100%);
+  z-index: 5;
+} 
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit .number {
+  width: 56px;
+  height: 56px;
+  font-family: "Fraunces";
+  font-size: 24px;
+  margin-bottom: 56px;
+}
+
+.benefit-title {
+  font-size: 32px;
+  font-family: "Fraunces";
+  font-weight: 600;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.benefit-description {
+  
+}
